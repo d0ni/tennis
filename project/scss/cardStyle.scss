@@ -1,0 +1,98 @@
+@import "_mixins-fonts.scss";
+
+.card-title,
+.card-price {
+  @include text("Ubuntu", 18px, bold, normal, center, #373a3c, none);
+}
+
+.card-text {
+  @include text("Ubuntu", 14px, 300, normal, center, #373a3c, none);
+}
+
+.card-spec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #069e2d;
+  border-radius: 0 4px 0 0;
+  padding: 0 10px;
+
+  @include text("Ubuntu", 14px, bold, normal, center, #ffffff, none);
+}
+
+.card-btn {
+  color: #fff;
+  background-color: #f24f11;
+  border-color: #f24f11;
+  width: 100%;
+  // text-decoration: none;
+  // outline: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.card {
+  // width: 23%;
+  border: solid 1px #e5e5e5;
+  margin: 0 0.2%;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px 10px rgba(0, 0, 0, 0.08);
+}
+
+// Slide button setting
+.i-rot {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  position: absolute;
+  top: calc(50% - 25px);
+  z-index: 10;
+
+  &:hover {
+    .icon-next:before {
+      color: #288820;
+    }
+  }
+}
+
+.slick-prev {
+  left: -3%;
+  @media (max-width: 991px) {
+    left: -4%;
+  }
+  @media (max-width: 767px) {
+    left: -5%;
+  }
+  @media (max-width: 576px) {
+    left: 1%;
+  }
+}
+.slick-next {
+  right: -3%;
+  @media (max-width: 991px) {
+    right: -4%;
+  }
+  @media (max-width: 767px) {
+    right: -5%;
+  }
+  @media (max-width: 576px) {
+    right: 1%;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-list {
+    width: 80%;
+    margin: 0 auto !important;
+  }
+}

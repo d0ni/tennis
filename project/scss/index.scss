@@ -1,0 +1,103 @@
+@import "_mixins-fonts.scss";
+@import "_fonts-Montserrat.scss";
+@import "normalize";
+@import "slick";
+
+/** ----- bootstrap tabs + slick.js ----- **/
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block; /* undo display:none          */
+  height: 0; /* height:0 is also invisible */
+  overflow: hidden; /* no-overflow                */
+}
+.tab-content > .active,
+.pill-content > .active {
+  height: 350px; /* let the content decide it - need to change */
+}
+/*********************************************************************************************************************\
+                                                  standart settings
+\*********************************************************************************************************************/
+*,
+*:focus {
+  outline: none !important;
+}
+a,
+a:hover,
+button,
+button:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+// body {
+//   overflow-x: hidden;
+//   position: relative;
+//   min-height: 100vh;
+// }
+// p {
+//   @include text("Montserrat", 20px, 800, normal, center, #2e2e2e, none);
+// }
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 80%;
+  }
+}
+/*********************************************************************************************************************\
+                                                  reusable components
+\*********************************************************************************************************************/
+/** ----- Slick-dots ----- **/
+.slick-dots li img:nth-child(1) {
+  display: block;
+}
+.slick-dots li img:nth-child(2) {
+  display: none;
+}
+.slick-dots li.slick-active img:nth-child(1) {
+  display: none;
+}
+.slick-dots li.slick-active img:nth-child(2) {
+  display: block;
+}
+/** ----- Main ----- **/
+// main {
+//   padding: 0 0 144px;
+//   @media (max-width: 1300px) {
+//     padding: 0 0 158px;
+//   }
+//   @media (max-width: 1200px) {
+//     padding: 0 0 390px;
+//   }
+//   @media (max-width: 650px) {
+//     padding: 0 0 437px;
+//   }
+//   @media (max-width: 480px) {
+//     padding: 0 0 429px;
+//   }
+// }
+/** ----- Section title ----- **/
+.title-h2 {
+  @include text("Montserrat", 40px, 800, normal, center, #2e2e2e, capitalize);
+  padding: 0 0 45px;
+  margin: 0;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+/*********************************************************************************************************************\
+                                                  Header
+\*********************************************************************************************************************/
+
+/*********************************************************************************************************************\
+                                                  Footer
+\*********************************************************************************************************************/
+// footer {
+//   padding: 33px 0;
+//   background: #efefef;
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+// }
