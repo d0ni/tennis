@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./ready-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="ready-css/all.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./fonts/icomoon/icomoon.css" />
+    <link rel="stylesheet" href="./fonts/index.css" />
+    <title>Tenis</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <!-- orange header -->
+      <div style="background-color: #fd8817">
+        <div class="container">
+          <!-- Upper part of orange header -->
+          <div class="row align-items-center pt-2">
+            <div class="col-lg-3 col-4">
+              <img src="./assets/header-logo/asset-1.png" alt="" />
+            </div>
+
+            <div class="col-lg-9 col-8 d-flex justify-content-end justify-content-sm-between">
+              <div class="align-items-center flex-column flex-lg-row d-none d-sm-flex">
+                <div class="d-flex align-items-center">
+                  <span class="icon-phone px-2"></span>
+                  <div class="d-flex flex-column flex-xl-row">
+                    <a class="hd-link" href="tel:+380991471864"
+                      >+38 099 147 18 64,&nbsp;</a
+                    >
+                    <a class="hd-link" href="tel:+380954447299"
+                      >+38 095 444 72 99</a
+                    >
+                  </div>
+                </div>
+                
+
+                <a class="hd-link d-flex align-items-center" href="mailto:povaliaef@gmail.com">
+                  <span class="icon-mail px-2"></span>
+                  <span class="">povaliaef@gmail.com</span>
+                </a>
+              </div>
+
+              <div class="d-flex flex-column flex-lg-row">
+                <a class="hd-link d-flex align-items-center" href="">
+                  <span class="icon-register px-2"></span>
+                  <span class="d-block ">Регистрация</span>
+                </a>
+
+                <a class="hd-link d-flex  align-items-center" href="">
+                  <span class="icon-login px-2"></span>
+                  <span class="d-block ">Войти</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom part of orange header -->
+          <div class="row d-flex align-items-center pb-3">
+            <div class="col-12 col-md-5">
+              <nav class="d-flex justify-content-between mt-2 mt-md-0">
+                <a class="header-link" href="">МАГАЗИН</a>
+                <a class="header-link" href="">БЛОГ</a>
+                <a class="header-link" href="">ФОРУМ</a>
+                <a class="header-link" href="">КОНТАКТЫ</a>
+              </nav>
+            </div>
+
+            <div class="col-12 col-md-7 d-flex justify-content-between mt-2 mt-md-0">
+              <div class="search">
+                <form action="">
+                  <input class="search-inp" type="text" placeholder="поиск" />
+                  <button class="search-img" type="submit"><img src="./assets/search.svg" alt=""></button>
+                  
+                </form>                
+              </div>
+              <a href="">
+                <div
+                  class="btn-cart d-flex align-items-center justify-content-center px-3"
+                >
+                  <img class="pr-2" src="./assets/cart.svg" alt="" />
+                  <p class="btn-cart-p d-none d-lg-block">Корзина пуста</p>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="col-9 col-md-4">
+              <input class="hd-search" type="text" placeholder="поиск" />
+              <img src="./assets/search.svg" alt="">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2">
+              <a href="">
+                <div
+                  class="btn-cart d-flex align-items-center justify-content-center"
+                >
+                  <img class="pr-2" src="./assets/cart.svg" alt="" />
+                  <p class="btn-cart-p d-none d-lg-block">Корзина пуста</p>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Green header -->
+      <div style="background-color: #288820">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarColor01"
+              aria-controls="navbarColor01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-a" href="">Ракетки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Основания</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Накладки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Мячи</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Одежда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Обувь</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Сумки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Чехлы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Сетки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-a" href="">Тейпирование</a>
+                </li>
+              </ul>
+              <!-- <form class="form-inline">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+                  Search
+                </button>
+              </form> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- TOP BANNER -->
+      <section>
+        <div class="container my-4 d-none d-sm-block bg">
+          <img class="bg-img" src="./assets/title/bitmap.png" alt="">
+          <div class="bg-green"></div>
+          <div class="bg-text">
+            <h1 class="bg-text-h1">ОТ НОВИЧКА ДО ПРОФИ</h1>
+            <p class="bg-text-p">
+              инвентарь для любого стиля игры и уровня мастерства
+            </p>
+          </div>
+          <a class="bg-a" href="">смотреть все >></a>
+        </div>
+      </section>
+
+      <!-- First slider -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-4">
+            <div class="col">
+              <hr class="grey-line" />
+            </div>
+            <h4>САМЫЕ ПОПУЛЯРНЫЕ</h4>
+            <div class="col">
+              <hr class="grey-line" />
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="justify-content-center d-flex">
+          <div class="container mx-1 card-container">
+            <div class="row d-flex justify-content-between slider-nav">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Новинка</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC1</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Хит</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC2</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Новинка</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC3</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Новинка</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC4</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Хит</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC5</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Новинка</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC6</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Новинка</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC7</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./assets/rackets/1/bitmap.png"
+                  alt=""
+                />
+                <div class="card-spec">Хит</div>
+                <div class="card-body">
+                  <h5 class="card-title">Killerspin Diamond TC8</h5>
+                  <p class="card-text">
+                    Недорогая ракетка для игры без сильных вращений
+                  </p>
+                  <h5 class="card-price">150 грн</h5>
+                  <a href="#" class="btn card-btn">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center pt-5">
+          <a class="green-link" href="">Cмотреть все >></a>
+        </div>
+      </section>
+
+      <!-- Second slider -->
+      <section>
+        <div class="sec-sl-bg">
+          <div class="container">
+            <div class="row justify-content-center pt-5 pb-4">
+              <div class="col">
+                <hr class="white-line" />
+              </div>
+                <h4 class="white" >АКЦИИ</h4>
+              <div class="col">
+                <hr class="white-line" />
+              </div>
+            </div> 
+          </div>
+                 
+      
+          <div class="justify-content-center d-flex">
+            <div class="container mx-1">
+              <div class="row d-flex justify-content-between slider-nav">
+                
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC1</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC2</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC3</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC4</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC5</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC6</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC7</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC8</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-center pt-5">
+            <a class="green-link white" href="">Cмотреть все >></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Third slider -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-4">
+            <div class="col">
+              <hr class="grey-line"  />
+            </div>
+            <h4>НОВИНКИ</h4>
+            <div class="col">
+              <hr class="grey-line"  />
+            </div>
+          </div>
+        </div>
+          
+  
+          <div class="justify-content-center d-flex">
+            <div class="container mx-1">
+              <div class="row d-flex justify-content-between slider-nav">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC1</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC2</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC3</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC4</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC5</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC6</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Новинка</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC7</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/rackets/1/bitmap.png"
+                    alt=""
+                  />
+                  <div class="card-spec">Хит</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Killerspin Diamond TC8</h5>
+                    <p class="card-text">
+                      Недорогая ракетка для игры без сильных вращений
+                    </p>
+                    <h5 class="card-price">150 грн</h5>
+                    <a href="#" class="btn card-btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-center pt-5">
+            <a class="green-link" href="">Cмотреть все >></a>
+          </div>
+        </section>
+  
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3">
+            <h3 class="text-center text-xl-left pl-xl-4 pt-5 footer-h3 ">Разделы сайта</h3>
+            <div class="d-flex justify-content-center justify-content-xl-start">
+              <ul class="m-0">
+                <li>
+                  <a class="footer-a" href="">Магазин</a>
+                </li>
+                <li>
+                  <a class="footer-a" href="">Блог</a>
+                </li>
+                <li>
+                  <a class="footer-a" href="">Форум</a>
+                </li>
+                <li>
+                  <a class="footer-a" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 footer-border-1">
+            <h3 class="text-center text-xl-left pl-xl-4 pt-5 footer-h3 ">Информация</h3>
+            <div class="d-flex justify-content-center justify-content-xl-start">
+              <ul class="m-0">
+                <li>
+                  <a class="footer-a" href="">О нас</a>
+                </li>
+                <li>
+                  <a class="footer-a" href="">Оплата</a>
+                </li>
+                <li>
+                  <a class="footer-a" href="">Доставка</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 footer-border-2">
+            <h3 class="text-center pt-5 footer-h3 ">Контакты</h3>
+            <div class="d-flex justify-content-center">
+              <span class="icon-phone-white p-2"></span>
+              <div class="d-flex flex-column justify-content-start">
+                <a class="footer-a text-left" href="tel:+380991471864"
+                  >+38 099 147 18 64,</a
+                >
+                <a class="footer-a text-left" href="tel:+380954447299"
+                  >+38 095 444 72 99</a
+                >
+                <a class="footer-a text-left" href="mailto:povaliaef@gmail.com"
+                  >povaliaef@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <h3 class="text-center pt-5 footer-h3 ">мы в соцсетях</h3>
+
+            <div class="d-flex justify-content-center pt-2">
+              <a class="footer-a" href=""
+                ><img src="./assets/facebook.svg" alt=""
+              /></a>
+              <a class="footer-a" href=""
+                ><img class="ml-3" src="./assets/instragram.svg" alt=""
+              /></a>
+              <a class="footer-a" href=""
+                ><img class="ml-3" src="./assets/youtube.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dark-line mt-5 py-2">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="dark-line-p d-none d-sm-block">2018 © PROtennis, Все права защищены</p>
+            <img src="./assets/logo-urich.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="ready-js/jquery.min.js"></script>
+    <script src="ready-js/slick.min.js"></script>
+    <script src="ready-js/scripts.min.js"></script>
+    <script src="ready-js/bootstrap.min.js"></script>
+  </body>
+</html>
