@@ -604,10 +604,19 @@ h4 {
 
 .bg {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  height: 250px;
+  background-image: url(../assets/title/bitmap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-background-clip: content-box;
+          background-clip: content-box; }
 
 .bg-img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .bg-green {
   position: absolute;
@@ -691,6 +700,22 @@ h4 {
 
 .white {
   color: #fff; }
+
+@media screen and (max-width: 992px) {
+  .bg-text {
+    top: 25%; }
+  .bg-text-h1 {
+    font-size: 32px; }
+  .bg-green {
+    width: 6.5%; } }
+
+@media screen and (max-width: 768px) {
+  .bg-text-h1 {
+    font-size: 28px; }
+  .bg-text-p {
+    font-size: 16px; }
+  .bg-green {
+    width: 9%; } }
 
 @media screen and (max-width: 576px) {
   .card-container {

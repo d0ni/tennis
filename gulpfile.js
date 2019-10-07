@@ -69,11 +69,11 @@ gulp.task("build", ["deletepublic", "styles", "js"], function() {
     .pipe(gulp.dest("public/ready-js"));
 
   var buildImg = gulp
-    .src(["project/assets/*"])
+    .src(["project/assets/**/*"])
     .pipe(gulp.dest("public/assets"));
 
   var buildFonts = gulp
-    .src(["project/fonts/*"])
+    .src(["project/fonts/**/*"])
     .pipe(gulp.dest("public/fonts"));
 
   var buildFontAwesome = gulp

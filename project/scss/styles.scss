@@ -36,13 +36,19 @@
 
 .hd-link {
   @include text("Ubuntu", 16px, normal, normal, center, #323131, none);
+  text-align: start;
 
   &:hover {
     color: #323131;
   }
 }
 
-.hd-search {
+.search {
+  position: relative;
+  width: 65%;
+}
+
+.search-inp {
   width: 100%;
   height: 38px;
   line-height: 38px;
@@ -50,27 +56,56 @@
   border-radius: 4px;
   border: solid 1px #cccccc;
   background-color: #ffffff;
+
+  &::placeholder {
+    padding-left: 16px;
+  }
+}
+
+.search-img {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  padding-right: 15px;
+  // padding: 9px 15px;
 }
 
 /*********************************************************************************************************************\
                                                   Main
 \*********************************************************************************************************************/
 
+h4 {
+  @include text("Ubuntu", 20px, bold, normal, center, #000000, none);
+  margin: 0;
+  line-height: 33px;
+}
+
 .bg {
   position: relative;
-  height: 310px;
-  background-image: url("../icons/title/bitmap.png");
-  background-size: cover;
+  width: 100%;
+  height: 250px;
+  background-image: url(../assets/title/bitmap.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
 }
 
 .bg-green {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  height: 100%;
   width: 5%;
+  left: 15px;
+  top: 0;
+  z-index: 1;
+
   background-color: #2e552d;
 }
 
@@ -92,7 +127,7 @@
 
 .bg-a {
   position: absolute;
-  right: 0;
+  right: 15px;
   bottom: 0;
 
   background-color: #248622;
@@ -116,7 +151,7 @@
 }
 
 .sec-sl-bg {
-  background-image: url("../icons/stock-bg/bitmap.png");
+  background-image: url("../assets/stock-bg/bitmap.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,6 +181,36 @@
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .bg-text {
+    top: 25%;
+  }
+  .bg-text-h1 {
+    font-size: 32px;
+  }
+  .bg-green {
+    width: 6.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-text-h1 {
+    font-size: 28px;
+  }
+  .bg-text-p {
+    font-size: 16px;
+  }
+  .bg-green {
+    width: 9%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    max-width: 400px;
+  }
+}
+
 /*********************************************************************************************************************\
                                                   Footer
 \*********************************************************************************************************************/
@@ -159,8 +224,17 @@ footer {
   @include text("Ubuntu", 16px, normal, normal, center, inherit, none);
 
   &:hover {
-    color: inherit;
+    color: #069e2d;
   }
+  img:hover {
+    box-shadow: 0 0 11px 10px rgba(250, 249, 249, 0.2);
+    border-radius: 50%;
+  }
+}
+
+.icon-youtube::before {
+  width: 40px;
+  height: 40px;
 }
 
 .footer-h3 {

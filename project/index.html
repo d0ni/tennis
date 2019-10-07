@@ -22,36 +22,39 @@
           <!-- Upper part of orange header -->
           <div class="row align-items-center pt-2">
             <div class="col-lg-3 col-4">
-              <img src="./icons/header-logo/asset-1.png" alt="" />
+              <img src="./assets/header-logo/asset-1.png" alt="" />
             </div>
 
-            <div class="col-lg-9 col-8 d-flex justify-content-between">
-              <div class="d-flex">
-                <span class="icon-phone px-2"></span>
-                <div class="d-flex flex-column flex-lg-row">
-                  <a class="hd-link" href="tel:+380991471864"
-                    >+38 099 147 18 64,&nbsp;</a
-                  >
-                  <a class="hd-link" href="tel:+380954447299"
-                    >+38 095 444 72 99</a
-                  >
+            <div class="col-lg-9 col-8 d-flex justify-content-end justify-content-sm-between">
+              <div class="align-items-center flex-column flex-lg-row d-none d-sm-flex">
+                <div class="d-flex align-items-center">
+                  <span class="icon-phone px-2"></span>
+                  <div class="d-flex flex-column flex-xl-row">
+                    <a class="hd-link" href="tel:+380991471864"
+                      >+38 099 147 18 64,&nbsp;</a
+                    >
+                    <a class="hd-link" href="tel:+380954447299"
+                      >+38 095 444 72 99</a
+                    >
+                  </div>
                 </div>
+                
 
-                <a class="hd-link d-flex" href="mailto:povaliaef@gmail.com">
+                <a class="hd-link d-flex align-items-center" href="mailto:povaliaef@gmail.com">
                   <span class="icon-mail px-2"></span>
-                  <span class="d-none d-md-block">povaliaef@gmail.com</span>
+                  <span class="">povaliaef@gmail.com</span>
                 </a>
               </div>
 
-              <div class="d-flex">
-                <a class="hd-link d-flex" href="">
+              <div class="d-flex flex-column flex-lg-row">
+                <a class="hd-link d-flex align-items-center" href="">
                   <span class="icon-register px-2"></span>
-                  <span class="d-none d-lg-block">Регистрация</span>
+                  <span class="d-block ">Регистрация</span>
                 </a>
 
-                <a class="hd-link d-flex" href="">
+                <a class="hd-link d-flex  align-items-center" href="">
                   <span class="icon-login px-2"></span>
-                  <span class="d-none d-lg-block">Войти</span>
+                  <span class="d-block ">Войти</span>
                 </a>
               </div>
             </div>
@@ -60,7 +63,7 @@
           <!-- Bottom part of orange header -->
           <div class="row d-flex align-items-center pb-3">
             <div class="col-12 col-md-5">
-              <nav class="d-flex justify-content-between">
+              <nav class="d-flex justify-content-between mt-2 mt-md-0">
                 <a class="header-link" href="">МАГАЗИН</a>
                 <a class="header-link" href="">БЛОГ</a>
                 <a class="header-link" href="">ФОРУМ</a>
@@ -68,8 +71,26 @@
               </nav>
             </div>
 
-            <div class="col-9 col-md-4">
+            <div class="col-12 col-md-7 d-flex justify-content-between mt-2 mt-md-0">
+              <div class="search">
+                <form action="">
+                  <input class="search-inp" type="text" placeholder="поиск" />
+                  <button class="search-img" type="submit"><img src="./assets/search.svg" alt=""></button>
+                  
+                </form>                
+              </div>
+              <a href="">
+                <div
+                  class="btn-cart d-flex align-items-center justify-content-center px-3"
+                >
+                  <img class="pr-2" src="./assets/cart.svg" alt="" />
+                  <p class="btn-cart-p d-none d-lg-block">Корзина пуста</p>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="col-9 col-md-4">
               <input class="hd-search" type="text" placeholder="поиск" />
+              <img src="./assets/search.svg" alt="">
             </div>
             <div class="col-1"></div>
             <div class="col-2">
@@ -77,11 +98,11 @@
                 <div
                   class="btn-cart d-flex align-items-center justify-content-center"
                 >
-                  <img class="pr-2" src="./icons/cart.svg" alt="" />
+                  <img class="pr-2" src="./assets/cart.svg" alt="" />
                   <p class="btn-cart-p d-none d-lg-block">Корзина пуста</p>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -156,6 +177,7 @@
       <!-- TOP BANNER -->
       <section>
         <div class="container my-4 d-none d-sm-block bg">
+          <!-- <img class="bg-img" src="./assets/title/bitmap.png" alt=""> -->
           <div class="bg-green"></div>
           <div class="bg-text">
             <h1 class="bg-text-h1">ОТ НОВИЧКА ДО ПРОФИ</h1>
@@ -183,12 +205,12 @@
         
 
         <div class="justify-content-center d-flex">
-          <div class="container mx-1">
+          <div class="container mx-1 card-container">
             <div class="row d-flex justify-content-between slider-nav">
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Новинка</div>
@@ -205,7 +227,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Хит</div>
@@ -222,7 +244,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Новинка</div>
@@ -239,7 +261,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Новинка</div>
@@ -256,7 +278,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Хит</div>
@@ -273,7 +295,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Новинка</div>
@@ -290,7 +312,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Новинка</div>
@@ -307,7 +329,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="./icons/rackets/1/bitmap.png"
+                  src="./assets/rackets/1/bitmap.png"
                   alt=""
                 />
                 <div class="card-spec">Хит</div>
@@ -352,7 +374,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -369,7 +391,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -386,7 +408,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -403,7 +425,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -420,7 +442,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -437,7 +459,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -454,7 +476,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -471,7 +493,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -515,7 +537,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -532,7 +554,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -549,7 +571,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -566,7 +588,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -583,7 +605,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -600,7 +622,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -617,7 +639,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Новинка</div>
@@ -634,7 +656,7 @@
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="./icons/rackets/1/bitmap.png"
+                    src="./assets/rackets/1/bitmap.png"
                     alt=""
                   />
                   <div class="card-spec">Хит</div>
@@ -720,25 +742,25 @@
 
             <div class="d-flex justify-content-center pt-2">
               <a class="footer-a" href=""
-                ><img src="./icons/facebook.svg" alt=""
+                ><img src="./assets/facebook.svg" alt=""
               /></a>
               <a class="footer-a" href=""
-                ><img class="pl-3" src="./icons/instragram.svg" alt=""
+                ><img class="ml-3" src="./assets/instragram.svg" alt=""
               /></a>
               <a class="footer-a" href=""
-                ><img class="pl-3" src="./icons/youtube.svg" alt=""
+                ><img class="ml-3" src="./assets/youtube.svg" alt=""
               /></a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="dark-line mt-5">
+      <div class="dark-line mt-5 py-2">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <img src="./icons/logo.svg" alt="" />
-            <p class="dark-line-p">2018 © PROtennis, Все права защищены</p>
-            <img src="./icons/logo-urich.svg" alt="" />
+            <img src="./assets/logo.svg" alt="" />
+            <p class="dark-line-p d-none d-sm-block">2018 © PROtennis, Все права защищены</p>
+            <img src="./assets/logo-urich.svg" alt="" />
           </div>
         </div>
       </div>

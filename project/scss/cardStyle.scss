@@ -36,7 +36,7 @@
 .card {
   // width: 23%;
   border: solid 1px #e5e5e5;
-  margin: 0 0.2%;
+  margin: 0.2% 0.2%;
 }
 
 .card:hover {
@@ -66,24 +66,24 @@
 }
 
 .slick-prev {
-  left: -3%;
+  left: -4%;
   @media (max-width: 991px) {
-    left: -4%;
+    left: -6%;
   }
   @media (max-width: 767px) {
-    left: -5%;
+    left: -7%;
   }
   @media (max-width: 576px) {
     left: 1%;
   }
 }
 .slick-next {
-  right: -3%;
+  right: -4%;
   @media (max-width: 991px) {
-    right: -4%;
+    right: -6%;
   }
   @media (max-width: 767px) {
-    right: -5%;
+    right: -7%;
   }
   @media (max-width: 576px) {
     right: 1%;
